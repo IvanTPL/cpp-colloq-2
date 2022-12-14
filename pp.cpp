@@ -40,7 +40,6 @@ private:
 
 int main()
 {
-    std::cout << "called" << std::endl;
 	PingPong p;
 	std::thread pingThread(&PingPong::ping, &p);
 	std::thread pongThread(&PingPong::pong, &p);
