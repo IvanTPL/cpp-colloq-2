@@ -33,7 +33,7 @@ public:
 	}
 
 private:
-	std::atomic<std::size_t> count_;
+	std::atomic<std::size_t> count_ = 0;
 	std::mutex m_;
 	std::condition_variable cv_;
 };
